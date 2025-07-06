@@ -12,6 +12,7 @@ app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello, API is working!' });
 });
 
+// ✅ Tambah API POST di sini
 app.post('/api/users', (req, res) => {
   const { name } = req.body;
   if (!name) {
